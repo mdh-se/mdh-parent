@@ -97,7 +97,7 @@
     <mdh.maven-toolchains-plugin.version>1.1</mdh.maven-toolchains-plugin.version>
     <mdh.maven-wagon.version>2.8</mdh.maven-wagon.version>
     <mdh.maven-war-plugin.version>3.2.0</mdh.maven-war-plugin.version>
-    <mdh.mdh-maven-build-tools.version>26</mdh.mdh-maven-build-tools.version>
+    <mdh.mdh-maven-build-tools.version>27</mdh.mdh-maven-build-tools.version>
     <mdh.slf4j.version>1.7.25</mdh.slf4j.version>
     <mdh.spring.version>4.3.6.RELEASE</mdh.spring.version>
     <mdh.spring-boot.version>1.5.1.RELEASE</mdh.spring-boot.version>
@@ -148,7 +148,6 @@
           <configuration>
             <tarLongFileMode>gnu</tarLongFileMode>
           </configuration>
-<!--
           <dependencies>
             <dependency>
               <groupId>se.mdh</groupId>
@@ -156,7 +155,6 @@
               <version>${mdh.mdh-maven-build-tools.version}</version>
             </dependency>
           </dependencies>
--->
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -171,7 +169,6 @@
             <templateDirectory>se/mdh/plugins/announcement</templateDirectory>
             <templateEncoding>${mdh.maven-changes-plugin.templateEncoding}</templateEncoding>
           </configuration>
-<!--
           <dependencies>
             <dependency>
               <groupId>se.mdh</groupId>
@@ -179,13 +176,11 @@
               <version>${mdh.mdh-maven-build-tools.version}</version>
             </dependency>
           </dependencies>
--->
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-checkstyle-plugin</artifactId>
           <version>${mdh.maven-checkstyle-plugin.version}</version>
-          <!--
           <dependencies>
             <dependency>
               <groupId>se.mdh</groupId>
@@ -193,7 +188,6 @@
               <version>${mdh.mdh-maven-build-tools.version}</version>
             </dependency>
           </dependencies>
--->
           <configuration>
             <configLocation>mdh/checkstyle.xml</configLocation>
             <suppressionsLocation>checkstyle-suppressions.xml</suppressionsLocation>
