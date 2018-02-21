@@ -670,13 +670,6 @@
                   <goal>announcement-generate</goal>
                 </goals>
               </execution>
-              <execution>
-                <id>announcement-mail</id>
-                <phase>deploy</phase>
-                <goals>
-                  <goal>announcement-mail</goal>
-                </goals>
-              </execution>
             </executions>
           </plugin>
 
