@@ -7,7 +7,7 @@
   <version>25-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>MDH Parent</name>
+  <name>${project.groupId}:${project.artifactId}</name>
   <description>En parent för MDH-produkter.</description>
   <url>https://github.com/mdh-se/mdh-parent</url>
   <organization>
