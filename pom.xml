@@ -95,7 +95,7 @@
     <mdh.maven-source-plugin.version>3.0.1</mdh.maven-source-plugin.version>
     <mdh.maven-surefire-plugin.version>2.20.1</mdh.maven-surefire-plugin.version>
     <mdh.maven-toolchains-plugin.version>1.1</mdh.maven-toolchains-plugin.version>
-    <mdh.maven-wagon.version>2.8</mdh.maven-wagon.version>
+    <mdh.maven-wagon.version>3.1.0</mdh.maven-wagon.version>
     <mdh.maven-war-plugin.version>3.2.0</mdh.maven-war-plugin.version>
     <mdh.mdh-maven-build-tools.version>27</mdh.mdh-maven-build-tools.version>
     <mdh.slf4j.version>1.7.25</mdh.slf4j.version>
