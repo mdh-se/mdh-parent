@@ -614,7 +614,7 @@
           <reportSet>
             <reports>
               <report>index</report>
-              <report>project-team</report>
+              <report>team</report>
             </reports>
           </reportSet>
         </reportSets>
