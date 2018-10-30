@@ -60,6 +60,8 @@
     <mdh.extra-enforcer-rules.version>1.0-beta-9</mdh.extra-enforcer-rules.version>
     <mdh.findbugs-maven-plugin.version>3.0.5</mdh.findbugs-maven-plugin.version>
     <mdh.java.version>1.8</mdh.java.version>
+    <mdh.jaxb-api.version>2.2.8</mdh.jaxb-api.version>
+    <mdh.jaxws-api.version>2.2.9</mdh.jaxws-api.version>
     <mdh.logging.email.level>off</mdh.logging.email.level>
     <mdh.logging.file.encoding>UTF-8</mdh.logging.file.encoding>
     <mdh.logging.file.level>debug</mdh.logging.file.level>
@@ -93,7 +95,7 @@
     <mdh.maven-scm-provider-jgit.version>1.9.5</mdh.maven-scm-provider-jgit.version>
     <mdh.maven-site-plugin.version>3.7.1</mdh.maven-site-plugin.version>
     <mdh.maven-source-plugin.version>3.0.1</mdh.maven-source-plugin.version>
-    <mdh.maven-surefire-plugin.version>2.22.0</mdh.maven-surefire-plugin.version>
+    <mdh.maven-surefire-plugin.version>2.22.1</mdh.maven-surefire-plugin.version>
     <mdh.maven-toolchains-plugin.version>1.1</mdh.maven-toolchains-plugin.version>
     <mdh.maven-wagon.version>3.1.0</mdh.maven-wagon.version>
     <mdh.maven-war-plugin.version>3.2.2</mdh.maven-war-plugin.version>
