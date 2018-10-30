@@ -743,6 +743,7 @@
         <jdk>[1.9,)</jdk>
       </activation>
       <properties>
+        <mdh.animal-sniffer-maven-plugin.version>1.17</mdh.animal-sniffer-maven-plugin.version>
         <mdh.cxf.version>3.2.6</mdh.cxf.version>
         <mdh.cxf-xjc.version>3.2.3</mdh.cxf-xjc.version>
         <mdh.maven-enforcer-plugin.version>3.0.0-M2</mdh.maven-enforcer-plugin.version>
