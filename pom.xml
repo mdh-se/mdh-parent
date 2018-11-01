@@ -119,6 +119,21 @@
     <project.scm.id>github</project.scm.id>
   </properties>
 
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>javax.xml.bind</groupId>
+        <artifactId>jaxb-api</artifactId>
+        <version>${mdh.jaxb-api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.glassfish.jaxb</groupId>
+        <artifactId>jaxb-runtime</artifactId>
+        <version>${mdh.jaxb-impl.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
   <build>
     <pluginManagement>
       <plugins>
@@ -747,6 +762,18 @@
         <mdh.cxf.version>3.2.6</mdh.cxf.version>
         <mdh.cxf-xjc.version>3.2.3</mdh.cxf-xjc.version>
         <mdh.maven-enforcer-plugin.version>3.0.0-M2</mdh.maven-enforcer-plugin.version>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>java-11</id>
+      <!-- For plugins that require at least Java 11 to run, or are required to build with Java 11 -->
+      <activation>
+        <jdk>[1.11,)</jdk>
+      </activation>
+      <properties>
+        <mdh.jaxb-api.version>2.4.0-b180830.0359</mdh.jaxb-api.version>
+        <mdh.jaxb-impl.version>2.4.0-b180830.0438</mdh.jaxb-impl.version>
       </properties>
     </profile>
 
