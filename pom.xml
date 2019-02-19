@@ -514,7 +514,7 @@
           <version>${mdh.spring-boot.version}</version>
           <configuration>
             <embeddedLaunchScriptProperties>
-              <logFolder>$HOME/logs</logFolder>
+              <logFolder>$HOME/logs/${project.artifactId}</logFolder>
               <pidFolder>$HOME/pid</pidFolder>
             </embeddedLaunchScriptProperties>
             <executable>true</executable>
