@@ -138,24 +138,6 @@
   </dependencyManagement>
 
   <build>
-    <resources>
-      <resource>
-        <filtering>true</filtering>
-        <directory>src/main/resources</directory>
-        <excludes>
-          <exclude>**/*.properties</exclude>
-        </excludes>
-      </resource>
-    </resources>
-    <testResources>
-      <testResource>
-        <filtering>true</filtering>
-        <directory>src/test/resources</directory>
-        <excludes>
-          <exclude>**/*.properties</exclude>
-        </excludes>
-      </testResource>
-    </testResources>
     <pluginManagement>
       <plugins>
         <plugin>
@@ -617,48 +599,6 @@
             <version>${mdh.extra-enforcer-rules.version}</version>
           </dependency>
         </dependencies>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-resources-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>resources-properties</id>
-            <goals>
-              <goal>resources</goal>
-            </goals>
-            <configuration>
-              <encoding>ISO-8859-1</encoding>
-              <resources>
-                <resource>
-                  <filtering>true</filtering>
-                  <directory>src/main/resources</directory>
-                  <includes>
-                    <include>**/*.properties</include>
-                  </includes>
-                </resource>
-              </resources>
-            </configuration>
-          </execution>
-          <execution>
-            <id>test-resources-properties</id>
-            <goals>
-              <goal>testResources</goal>
-            </goals>
-            <configuration>
-              <encoding>ISO-8859-1</encoding>
-              <resources>
-                <resource>
-                  <filtering>true</filtering>
-                  <directory>src/test/resources</directory>
-                  <includes>
-                    <include>**/*.properties</include>
-                  </includes>
-                </resource>
-              </resources>
-            </configuration>
-          </execution>
-        </executions>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
