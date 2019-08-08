@@ -105,6 +105,7 @@
     <!-- This version is tied to spring-boot -->
     <mdh.mockito.version>1.10.19</mdh.mockito.version>
     <mdh.slf4j.version>1.7.25</mdh.slf4j.version>
+    <mdh.spotbugs-maven-plugin.version>3.1.12.2</mdh.spotbugs-maven-plugin.version>
     <mdh.spring.version>4.3.6.RELEASE</mdh.spring.version>
     <mdh.spring-boot.version>1.5.1.RELEASE</mdh.spring-boot.version>
     <mdh.springfox.version>2.6.0</mdh.springfox.version>
@@ -138,6 +139,11 @@
   <build>
     <pluginManagement>
       <plugins>
+        <plugin>
+          <groupId>com.github.spotbugs</groupId>
+          <artifactId>spotbugs-maven-plugin</artifactId>
+          <version>${mdh.spotbugs-maven-plugin.version}</version>
+        </plugin>
         <plugin>
           <groupId>org.apache.cxf</groupId>
           <artifactId>cxf-codegen-plugin</artifactId>
