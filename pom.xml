@@ -34,18 +34,18 @@
   <scm>
     <connection>scm:git:https://github.com/mdh-se/${project.artifactId}.git</connection>
     <developerConnection>scm:git:https://github.com/mdh-se/${project.artifactId}.git</developerConnection>
-    <url>https://github.com/mdh-se/${project.artifactId}</url>
     <tag>HEAD</tag>
+    <url>https://github.com/mdh-se/${project.artifactId}</url>
   </scm>
   <distributionManagement>
-    <snapshotRepository>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </snapshotRepository>
     <repository>
       <id>ossrh</id>
       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
     </repository>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
   </distributionManagement>
 
   <properties>
@@ -172,9 +172,6 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-assembly-plugin</artifactId>
           <version>${mdh.maven-assembly-plugin.version}</version>
-          <configuration>
-            <tarLongFileMode>gnu</tarLongFileMode>
-          </configuration>
           <dependencies>
             <dependency>
               <groupId>se.mdh</groupId>
@@ -182,11 +179,21 @@
               <version>${mdh.mdh-maven-build-tools.version}</version>
             </dependency>
           </dependencies>
+          <configuration>
+            <tarLongFileMode>gnu</tarLongFileMode>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-changes-plugin</artifactId>
           <version>${mdh.maven-changes-plugin.version}</version>
+          <dependencies>
+            <dependency>
+              <groupId>se.mdh</groupId>
+              <artifactId>mdh-maven-build-tools</artifactId>
+              <version>${mdh.mdh-maven-build-tools.version}</version>
+            </dependency>
+          </dependencies>
           <configuration>
             <!-- Inheriting POMs need to specify mailSender, smtpHost and toAddresses -->
             <failOnError>true</failOnError>
@@ -196,13 +203,6 @@
             <templateDirectory>se/mdh/plugins/announcement</templateDirectory>
             <templateEncoding>${mdh.maven-changes-plugin.templateEncoding}</templateEncoding>
           </configuration>
-          <dependencies>
-            <dependency>
-              <groupId>se.mdh</groupId>
-              <artifactId>mdh-maven-build-tools</artifactId>
-              <version>${mdh.mdh-maven-build-tools.version}</version>
-            </dependency>
-          </dependencies>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -362,6 +362,13 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-release-plugin</artifactId>
           <version>${mdh.maven-release-plugin.version}</version>
+          <dependencies>
+            <dependency>
+              <groupId>org.apache.maven.scm</groupId>
+              <artifactId>maven-scm-provider-jgit</artifactId>
+              <version>${mdh.maven-scm-provider-jgit.version}</version>
+            </dependency>
+          </dependencies>
           <configuration>
             <autoVersionSubmodules>true</autoVersionSubmodules>
             <providerImplementations>
@@ -372,13 +379,6 @@
             <!-- Deaktivera default profilen "release-profile" vid release -->
             <useReleaseProfile>false</useReleaseProfile>
           </configuration>
-          <dependencies>
-            <dependency>
-              <groupId>org.apache.maven.scm</groupId>
-              <artifactId>maven-scm-provider-jgit</artifactId>
-              <version>${mdh.maven-scm-provider-jgit.version}</version>
-            </dependency>
-          </dependencies>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -397,9 +397,6 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
           <version>${mdh.maven-site-plugin.version}</version>
-          <configuration>
-            <locales>sv</locales>
-          </configuration>
           <dependencies>
             <!-- Add support for ssh/scp, required by Maven 3 -->
             <dependency>
@@ -408,6 +405,9 @@
               <version>${mdh.maven-wagon.version}</version>
             </dependency>
           </dependencies>
+          <configuration>
+            <locales>sv</locales>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
