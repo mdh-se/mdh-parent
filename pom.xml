@@ -421,6 +421,9 @@
           <version>${mdh.maven-resources-plugin.version}</version>
           <configuration>
             <escapeString>\</escapeString>
+            <nonFilteredFileExtensions>
+              <nonFilteredFileExtension>pdf</nonFilteredFileExtension>
+            </nonFilteredFileExtensions>
           </configuration>
         </plugin>
         <plugin>
