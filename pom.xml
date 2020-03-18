@@ -102,8 +102,8 @@
     <mdh.maven-wagon.version>3.1.0</mdh.maven-wagon.version>
     <mdh.maven-war-plugin.version>3.2.2</mdh.maven-war-plugin.version>
     <mdh.mdh-maven-build-tools.version>29</mdh.mdh-maven-build-tools.version>
-    <!-- This version is tied to spring-boot -->
-    <mdh.mockito.version>1.10.19</mdh.mockito.version>
+    <!-- This version is tied to spring-boot-test -->
+    <mdh.mockito.version>3.1.0</mdh.mockito.version>
     <mdh.slf4j.version>1.7.25</mdh.slf4j.version>
     <mdh.sortpom-maven-plugin.version>2.10.0</mdh.sortpom-maven-plugin.version>
     <mdh.spotbugs-maven-plugin.version>3.1.12.2</mdh.spotbugs-maven-plugin.version>
