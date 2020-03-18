@@ -59,6 +59,10 @@
     <mdh.exec-maven-plugin.version>1.4.0</mdh.exec-maven-plugin.version>
     <mdh.extra-enforcer-rules.version>1.0-beta-9</mdh.extra-enforcer-rules.version>
     <mdh.findbugs-maven-plugin.version>3.0.5</mdh.findbugs-maven-plugin.version>
+    <!-- This version is tied to spring-boot-test -->
+    <mdh.hamcrest.version>2.1</mdh.hamcrest.version>
+    <!-- This version is tied to spring-boot -->
+    <mdh.jackson.version>2.10.2</mdh.jackson.version>
     <mdh.jacoco-maven-plugin.version>0.8.3</mdh.jacoco-maven-plugin.version>
     <mdh.java.version>1.8</mdh.java.version>
     <mdh.jaxb-api.version>2.2.8</mdh.jaxb-api.version>
@@ -102,8 +106,6 @@
     <mdh.maven-wagon.version>3.1.0</mdh.maven-wagon.version>
     <mdh.maven-war-plugin.version>3.2.2</mdh.maven-war-plugin.version>
     <mdh.mdh-maven-build-tools.version>29</mdh.mdh-maven-build-tools.version>
-    <!-- This version is tied to spring-boot-test -->
-    <mdh.hamcrest.version>2.1</mdh.hamcrest.version>
     <!-- This version is tied to spring-boot-test -->
     <mdh.mockito.version>3.1.0</mdh.mockito.version>
     <mdh.slf4j.version>1.7.25</mdh.slf4j.version>
