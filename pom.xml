@@ -51,6 +51,7 @@
   <properties>
     <!-- MDH-specific properties -->
     <mdh.animal-sniffer-maven-plugin.version>1.17</mdh.animal-sniffer-maven-plugin.version>
+    <mdh.annotation-api.version>1.3.2</mdh.annotation-api.version>
     <mdh.appassembler-maven-plugin.version>1.9</mdh.appassembler-maven-plugin.version>
     <mdh.build-helper-maven-plugin.version>3.0.0</mdh.build-helper-maven-plugin.version>
     <mdh.cobertura-maven-plugin.version>2.7</mdh.cobertura-maven-plugin.version>
@@ -129,6 +130,11 @@
 
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>javax.annotation</groupId>
+        <artifactId>javax.annotation-api</artifactId>
+        <version>${mdh.annotation-api.version}</version>
+      </dependency>
       <dependency>
         <groupId>javax.xml.bind</groupId>
         <artifactId>jaxb-api</artifactId>
