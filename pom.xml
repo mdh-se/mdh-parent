@@ -102,7 +102,7 @@
     <mdh.maven-scm-provider-jgit.version>1.9.5</mdh.maven-scm-provider-jgit.version>
     <mdh.maven-site-plugin.version>3.7.1</mdh.maven-site-plugin.version>
     <mdh.maven-source-plugin.version>3.0.1</mdh.maven-source-plugin.version>
-    <mdh.maven-surefire-plugin.version>2.22.1</mdh.maven-surefire-plugin.version>
+    <mdh.maven-surefire-plugin.version>2.22.2</mdh.maven-surefire-plugin.version>
     <mdh.maven-toolchains-plugin.version>1.1</mdh.maven-toolchains-plugin.version>
     <mdh.maven-wagon.version>3.1.0</mdh.maven-wagon.version>
     <mdh.maven-war-plugin.version>3.2.2</mdh.maven-war-plugin.version>
