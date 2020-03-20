@@ -119,7 +119,8 @@
     <mdh.springfox.version>2.9.2</mdh.springfox.version>
     <mdh.sql-maven-plugin.version>1.5</mdh.sql-maven-plugin.version>
     <mdh.tidy-maven-plugin.version>1.1.0</mdh.tidy-maven-plugin.version>
-    <mdh.validation-api.version>1.0.0.GA</mdh.validation-api.version>
+    <!-- This version is tied to spring-boot -->
+    <mdh.validation-api.version>2.0.1.Final</mdh.validation-api.version>
     <mdh.versions-maven-plugin.version>2.5</mdh.versions-maven-plugin.version>
 
     <!-- Standard Maven properties -->
