@@ -141,14 +141,14 @@
         <version>${mdh.annotation-api.version}</version>
       </dependency>
       <dependency>
-        <groupId>javax.persistence</groupId>
-        <artifactId>javax.persistence-api</artifactId>
-        <version>${mdh.persistence-api.version}</version>
-      </dependency>
-      <dependency>
         <groupId>javax.jms</groupId>
         <artifactId>javax.jms-api</artifactId>
         <version>${mdh.jms-api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.persistence</groupId>
+        <artifactId>javax.persistence-api</artifactId>
+        <version>${mdh.persistence-api.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.validation</groupId>
