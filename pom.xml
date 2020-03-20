@@ -110,6 +110,7 @@
     <mdh.mdh-maven-build-tools.version>29</mdh.mdh-maven-build-tools.version>
     <!-- This version is tied to spring-boot-test -->
     <mdh.mockito.version>3.1.0</mdh.mockito.version>
+    <mdh.rs-api.version>2.0</mdh.rs-api.version>
     <mdh.slf4j.version>1.7.25</mdh.slf4j.version>
     <mdh.sortpom-maven-plugin.version>2.10.0</mdh.sortpom-maven-plugin.version>
     <mdh.spotbugs-maven-plugin.version>3.1.12.2</mdh.spotbugs-maven-plugin.version>
@@ -147,6 +148,11 @@
         <groupId>javax.validation</groupId>
         <artifactId>validation-api</artifactId>
         <version>${mdh.validation-api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.ws.rs</groupId>
+        <artifactId>javax.ws.rs-api</artifactId>
+        <version>${mdh.rs-api.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.xml.bind</groupId>
