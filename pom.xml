@@ -110,6 +110,7 @@
     <mdh.mdh-maven-build-tools.version>29</mdh.mdh-maven-build-tools.version>
     <!-- This version is tied to spring-boot-test -->
     <mdh.mockito.version>3.1.0</mdh.mockito.version>
+    <mdh.persistence-api.version>2.2</mdh.persistence-api.version>
     <mdh.rs-api.version>2.0</mdh.rs-api.version>
     <mdh.slf4j.version>1.7.25</mdh.slf4j.version>
     <mdh.sortpom-maven-plugin.version>2.10.0</mdh.sortpom-maven-plugin.version>
@@ -138,6 +139,11 @@
         <groupId>javax.annotation</groupId>
         <artifactId>javax.annotation-api</artifactId>
         <version>${mdh.annotation-api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.persistence</groupId>
+        <artifactId>javax.persistence-api</artifactId>
+        <version>${mdh.persistence-api.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.jms</groupId>
