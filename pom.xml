@@ -67,8 +67,8 @@
     <mdh.jacoco-maven-plugin.version>0.8.3</mdh.jacoco-maven-plugin.version>
     <mdh.java.version>1.8</mdh.java.version>
     <mdh.jaxb-api.version>2.2.8</mdh.jaxb-api.version>
-    <mdh.jms-api.version>2.0.1</mdh.jms-api.version>
     <mdh.jaxws-api.version>2.2.9</mdh.jaxws-api.version>
+    <mdh.jms-api.version>2.0.1</mdh.jms-api.version>
     <mdh.jsr181-api.version>1.0-MR1</mdh.jsr181-api.version>
     <mdh.logging.email.level>off</mdh.logging.email.level>
     <mdh.logging.file.encoding>UTF-8</mdh.logging.file.encoding>
@@ -152,6 +152,11 @@
         <groupId>javax.xml.bind</groupId>
         <artifactId>jaxb-api</artifactId>
         <version>${mdh.jaxb-api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.xml.ws</groupId>
+        <artifactId>jaxws-api</artifactId>
+        <version>${mdh.jaxws-api.version}</version>
       </dependency>
       <dependency>
         <groupId>org.glassfish.jaxb</groupId>
