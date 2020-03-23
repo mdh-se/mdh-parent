@@ -155,16 +155,9 @@
         <artifactId>javax.jms-api</artifactId>
         <version>${mdh.jms-api.version}</version>
       </dependency>
-      <!-- API -->
       <dependency>
         <groupId>javax.mail</groupId>
         <artifactId>javax.mail-api</artifactId>
-        <version>${mdh.mail.version}</version>
-      </dependency>
-      <!-- API + implementation -->
-      <dependency>
-        <groupId>javax.mail</groupId>
-        <artifactId>mail</artifactId>
         <version>${mdh.mail.version}</version>
       </dependency>
       <dependency>
