@@ -139,7 +139,7 @@
 
   <dependencyManagement>
     <dependencies>
-      <!-- Implementation -->
+      <!-- Implementation javax.mail -->
       <dependency>
         <groupId>com.sun.mail</groupId>
         <artifactId>javax.mail</artifactId>
@@ -207,6 +207,7 @@
         <artifactId>jaxws-api</artifactId>
         <version>${mdh.jaxws-api.version}</version>
       </dependency>
+      <!-- Implementation javax.xml.bind -->
       <dependency>
         <groupId>org.glassfish.jaxb</groupId>
         <artifactId>jaxb-runtime</artifactId>
