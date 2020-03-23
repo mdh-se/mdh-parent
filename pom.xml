@@ -69,11 +69,14 @@
     <mdh.jaxb-api.version>2.2.8</mdh.jaxb-api.version>
     <mdh.jaxws-api.version>2.2.9</mdh.jaxws-api.version>
     <mdh.jms-api.version>2.0.1</mdh.jms-api.version>
+    <mdh.jsp-api.version>2.1</mdh.jsp-api.version>
     <mdh.jsr181-api.version>1.0-MR1</mdh.jsr181-api.version>
+    <mdh.jstl-api.version>1.2.1</mdh.jstl-api.version>
     <mdh.logging.email.level>off</mdh.logging.email.level>
     <mdh.logging.file.encoding>UTF-8</mdh.logging.file.encoding>
     <mdh.logging.file.level>debug</mdh.logging.file.level>
     <mdh.logging.product.level>debug</mdh.logging.product.level>
+    <mdh.mail.version>1.4.7</mdh.mail.version>
     <mdh.maven.version>3.0</mdh.maven.version>
     <mdh.maven-antrun-plugin.version>1.8</mdh.maven-antrun-plugin.version>
     <mdh.maven-assembly-plugin.version>3.1.0</mdh.maven-assembly-plugin.version>
@@ -112,6 +115,7 @@
     <mdh.mockito.version>3.1.0</mdh.mockito.version>
     <mdh.persistence-api.version>2.2</mdh.persistence-api.version>
     <mdh.rs-api.version>2.0</mdh.rs-api.version>
+    <mdh.servlet-api.version>2.5</mdh.servlet-api.version>
     <mdh.slf4j.version>1.7.25</mdh.slf4j.version>
     <mdh.sortpom-maven-plugin.version>2.10.0</mdh.sortpom-maven-plugin.version>
     <mdh.spotbugs-maven-plugin.version>3.1.12.2</mdh.spotbugs-maven-plugin.version>
@@ -135,6 +139,12 @@
 
   <dependencyManagement>
     <dependencies>
+      <!-- Implementation -->
+      <dependency>
+        <groupId>com.sun.mail</groupId>
+        <artifactId>javax.mail</artifactId>
+        <version>${mdh.mail.version}</version>
+      </dependency>
       <dependency>
         <groupId>javax.annotation</groupId>
         <artifactId>javax.annotation-api</artifactId>
@@ -145,10 +155,37 @@
         <artifactId>javax.jms-api</artifactId>
         <version>${mdh.jms-api.version}</version>
       </dependency>
+      <!-- API -->
+      <dependency>
+        <groupId>javax.mail</groupId>
+        <artifactId>javax.mail-api</artifactId>
+        <version>${mdh.mail.version}</version>
+      </dependency>
+      <!-- API + implementation -->
+      <dependency>
+        <groupId>javax.mail</groupId>
+        <artifactId>mail</artifactId>
+        <version>${mdh.mail.version}</version>
+      </dependency>
       <dependency>
         <groupId>javax.persistence</groupId>
         <artifactId>javax.persistence-api</artifactId>
         <version>${mdh.persistence-api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>servlet-api</artifactId>
+        <version>${mdh.servlet-api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.servlet.jsp</groupId>
+        <artifactId>jsp-api</artifactId>
+        <version>${mdh.jsp-api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.servlet.jsp.jstl</groupId>
+        <artifactId>javax.servlet.jsp.jstl-api</artifactId>
+        <version>${mdh.jstl-api.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.validation</groupId>
