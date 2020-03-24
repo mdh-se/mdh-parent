@@ -90,7 +90,7 @@
     <mdh.maven-deploy-plugin.version>2.8.2</mdh.maven-deploy-plugin.version>
     <mdh.maven-ear-plugin.version>2.10.1</mdh.maven-ear-plugin.version>
     <mdh.maven-ejb-plugin.version>3.0.0</mdh.maven-ejb-plugin.version>
-    <mdh.maven-enforcer-plugin.version>1.4.1</mdh.maven-enforcer-plugin.version>
+    <mdh.maven-enforcer-plugin.version>3.0.0-M3</mdh.maven-enforcer-plugin.version>
     <mdh.maven-gpg-plugin.version>1.6</mdh.maven-gpg-plugin.version>
     <mdh.maven-install-plugin.version>2.5.2</mdh.maven-install-plugin.version>
     <mdh.maven-jar-plugin.version>3.2.0</mdh.maven-jar-plugin.version>
@@ -956,7 +956,6 @@
       <properties>
         <mdh.cxf.version>3.2.6</mdh.cxf.version>
         <mdh.cxf-xjc.version>3.2.3</mdh.cxf-xjc.version>
-        <mdh.maven-enforcer-plugin.version>3.0.0-M3</mdh.maven-enforcer-plugin.version>
       </properties>
     </profile>
 
