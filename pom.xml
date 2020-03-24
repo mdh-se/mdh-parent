@@ -76,7 +76,7 @@
     <mdh.logging.file.encoding>UTF-8</mdh.logging.file.encoding>
     <mdh.logging.file.level>debug</mdh.logging.file.level>
     <mdh.logging.product.level>debug</mdh.logging.product.level>
-    <mdh.mail.version>1.4.7</mdh.mail.version>
+    <mdh.mail-api.version>1.4.7</mdh.mail-api.version>
     <mdh.maven.version>3.0</mdh.maven.version>
     <mdh.maven-antrun-plugin.version>1.8</mdh.maven-antrun-plugin.version>
     <mdh.maven-assembly-plugin.version>3.1.0</mdh.maven-assembly-plugin.version>
@@ -143,7 +143,7 @@
       <dependency>
         <groupId>com.sun.mail</groupId>
         <artifactId>javax.mail</artifactId>
-        <version>${mdh.mail.version}</version>
+        <version>${mdh.mail-api.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.annotation</groupId>
@@ -158,7 +158,7 @@
       <dependency>
         <groupId>javax.mail</groupId>
         <artifactId>javax.mail-api</artifactId>
-        <version>${mdh.mail.version}</version>
+        <version>${mdh.mail-api.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.persistence</groupId>
@@ -199,12 +199,6 @@
         <groupId>javax.xml.ws</groupId>
         <artifactId>jaxws-api</artifactId>
         <version>${mdh.jaxws-api.version}</version>
-      </dependency>
-      <!-- Implementation javax.xml.bind -->
-      <dependency>
-        <groupId>org.glassfish.jaxb</groupId>
-        <artifactId>jaxb-runtime</artifactId>
-        <version>${mdh.jaxb-impl.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -963,6 +957,17 @@
         <!-- Standard Maven properties -->
         <maven.compiler.release>8</maven.compiler.release>
       </properties>
+
+      <dependencyManagement>
+        <dependencies>
+          <!-- Implementation javax.xml.bind -->
+          <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-runtime</artifactId>
+            <version>${mdh.jaxb-impl.version}</version>
+          </dependency>
+        </dependencies>
+      </dependencyManagement>
     </profile>
 
     <profile>
