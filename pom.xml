@@ -948,18 +948,6 @@
     </profile>
 
     <profile>
-      <id>java-9</id>
-      <!-- For plugins that require at least Java 9 to run, or are required to build with Java 9 -->
-      <activation>
-        <jdk>[1.9,)</jdk>
-      </activation>
-      <properties>
-        <mdh.cxf.version>3.2.6</mdh.cxf.version>
-        <mdh.cxf-xjc.version>3.2.3</mdh.cxf-xjc.version>
-      </properties>
-    </profile>
-
-    <profile>
       <id>java-11</id>
       <!-- For plugins that require at least Java 11 to run, or are required to build with Java 11 -->
       <activation>
