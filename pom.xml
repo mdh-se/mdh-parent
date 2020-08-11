@@ -8,7 +8,7 @@
   <packaging>pom</packaging>
 
   <name>${project.groupId}:${project.artifactId}</name>
-  <description>En parent för MDH-produkter.</description>
+  <description>En maven-parent för MDH-produkter skrivna i Java.</description>
   <url>https://github.com/mdh-se/${project.artifactId}</url>
   <organization>
     <name>Mälardalens högskola</name>
