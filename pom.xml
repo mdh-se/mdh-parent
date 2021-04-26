@@ -97,7 +97,7 @@
     <mdh.maven-jxr-plugin.version>3.1.1</mdh.maven-jxr-plugin.version>
     <mdh.maven-pdf-plugin.version>1.4</mdh.maven-pdf-plugin.version>
     <mdh.maven-plugin-plugin.version>3.5.2</mdh.maven-plugin-plugin.version>
-    <mdh.maven-pmd-plugin.version>3.8</mdh.maven-pmd-plugin.version>
+    <mdh.maven-pmd-plugin.version>3.14.0</mdh.maven-pmd-plugin.version>
     <mdh.maven-project-info-reports-plugin.version>3.0.0</mdh.maven-project-info-reports-plugin.version>
     <mdh.maven-release-plugin.version>2.5.3</mdh.maven-release-plugin.version>
     <msh.maven-remote-resources-plugin.version>1.5</msh.maven-remote-resources-plugin.version>
