@@ -55,7 +55,6 @@
     <mdh.appassembler-maven-plugin.version>1.9</mdh.appassembler-maven-plugin.version>
     <mdh.build-helper-maven-plugin.version>3.0.0</mdh.build-helper-maven-plugin.version>
     <mdh.checkstyle.version>8.31</mdh.checkstyle.version>
-    <mdh.cobertura-maven-plugin.version>2.7</mdh.cobertura-maven-plugin.version>
     <mdh.cxf.version>3.2.14</mdh.cxf.version>
     <mdh.cxf-xjc.version>3.2.3</mdh.cxf-xjc.version>
     <mdh.exec-maven-plugin.version>1.4.0</mdh.exec-maven-plugin.version>
@@ -577,17 +576,6 @@
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>build-helper-maven-plugin</artifactId>
           <version>${mdh.build-helper-maven-plugin.version}</version>
-        </plugin>
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>cobertura-maven-plugin</artifactId>
-          <version>${mdh.cobertura-maven-plugin.version}</version>
-          <configuration>
-            <aggregate>true</aggregate>
-            <formats>
-              <format>xml</format>
-            </formats>
-          </configuration>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
