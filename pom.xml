@@ -83,7 +83,7 @@
     <mdh.maven-bundle-plugin.version>2.3.7</mdh.maven-bundle-plugin.version>
     <mdh.maven-changes-plugin.templateEncoding>ISO-8859-1</mdh.maven-changes-plugin.templateEncoding>
     <mdh.maven-changes-plugin.version>2.12.1</mdh.maven-changes-plugin.version>
-    <mdh.maven-checkstyle-plugin.version>3.0.0</mdh.maven-checkstyle-plugin.version>
+    <mdh.maven-checkstyle-plugin.version>3.1.2</mdh.maven-checkstyle-plugin.version>
     <mdh.maven-clean-plugin.version>3.1.0</mdh.maven-clean-plugin.version>
     <mdh.maven-compiler-plugin.version>3.8.1</mdh.maven-compiler-plugin.version>
     <mdh.maven-dependency-plugin.version>3.1.2</mdh.maven-dependency-plugin.version>
@@ -110,7 +110,7 @@
     <mdh.maven-toolchains-plugin.version>1.1</mdh.maven-toolchains-plugin.version>
     <mdh.maven-wagon.version>3.1.0</mdh.maven-wagon.version>
     <mdh.maven-war-plugin.version>3.2.2</mdh.maven-war-plugin.version>
-    <mdh.mdh-maven-build-tools.version>29</mdh.mdh-maven-build-tools.version>
+    <mdh.mdh-maven-build-tools.version>30</mdh.mdh-maven-build-tools.version>
     <!-- This version is tied to spring-boot-test -->
     <mdh.mockito.version>3.1.0</mdh.mockito.version>
     <mdh.persistence-api.version>2.2</mdh.persistence-api.version>
