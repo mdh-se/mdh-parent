@@ -59,7 +59,6 @@
     <mdh.cxf-xjc.version>3.2.3</mdh.cxf-xjc.version>
     <mdh.exec-maven-plugin.version>1.4.0</mdh.exec-maven-plugin.version>
     <mdh.extra-enforcer-rules.version>1.2</mdh.extra-enforcer-rules.version>
-    <mdh.findbugs-maven-plugin.version>3.0.5</mdh.findbugs-maven-plugin.version>
     <!-- This version is tied to spring-boot-test -->
     <mdh.hamcrest.version>2.1</mdh.hamcrest.version>
     <!-- This version is tied to spring-boot -->
@@ -581,11 +580,6 @@
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>exec-maven-plugin</artifactId>
           <version>${mdh.exec-maven-plugin.version}</version>
-        </plugin>
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>findbugs-maven-plugin</artifactId>
-          <version>${mdh.findbugs-maven-plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
