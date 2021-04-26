@@ -101,7 +101,7 @@
     <mdh.maven-project-info-reports-plugin.version>3.0.0</mdh.maven-project-info-reports-plugin.version>
     <mdh.maven-release-plugin.version>2.5.3</mdh.maven-release-plugin.version>
     <msh.maven-remote-resources-plugin.version>1.5</msh.maven-remote-resources-plugin.version>
-    <mdh.maven-resources-plugin.version>3.1.0</mdh.maven-resources-plugin.version>
+    <mdh.maven-resources-plugin.version>3.2.0</mdh.maven-resources-plugin.version>
     <mdh.maven-scm-provider-jgit.version>1.9.5</mdh.maven-scm-provider-jgit.version>
     <mdh.maven-site-plugin.version>3.7.1</mdh.maven-site-plugin.version>
     <mdh.maven-source-plugin.version>3.2.1</mdh.maven-source-plugin.version>
