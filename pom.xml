@@ -12,7 +12,7 @@
   <url>https://github.com/mdh-se/${project.artifactId}</url>
   <organization>
     <name>Mälardalens högskola</name>
-    <url>http://www.mdh.se/</url>
+    <url>https://www.mdh.se/</url>
   </organization>
   <licenses>
     <license>
