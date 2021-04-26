@@ -132,8 +132,8 @@
     <!-- Standard Maven properties -->
     <maven.compiler.source>${mdh.java.version}</maven.compiler.source>
     <maven.compiler.target>${mdh.java.version}</maven.compiler.target>
-    <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>ISO-8859-1</project.reporting.outputEncoding>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.scm.id>github</project.scm.id>
   </properties>
 
