@@ -95,7 +95,7 @@
     <mdh.maven-install-plugin.version>2.5.2</mdh.maven-install-plugin.version>
     <mdh.maven-jar-plugin.version>3.2.0</mdh.maven-jar-plugin.version>
     <mdh.maven-javadoc-plugin.version>3.2.0</mdh.maven-javadoc-plugin.version>
-    <mdh.maven-jxr-plugin.version>3.0.0</mdh.maven-jxr-plugin.version>
+    <mdh.maven-jxr-plugin.version>3.1.1</mdh.maven-jxr-plugin.version>
     <mdh.maven-pdf-plugin.version>1.4</mdh.maven-pdf-plugin.version>
     <mdh.maven-plugin-plugin.version>3.5.2</mdh.maven-plugin-plugin.version>
     <mdh.maven-pmd-plugin.version>3.8</mdh.maven-pmd-plugin.version>
