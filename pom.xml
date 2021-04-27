@@ -950,8 +950,8 @@
       </activation>
       <properties>
         <!-- MDH-specific properties -->
-        <mdh.cxf.version>3.3.0</mdh.cxf.version>
-        <mdh.cxf-xjc.version>3.3.0</mdh.cxf-xjc.version>
+        <mdh.cxf.version>3.3.10</mdh.cxf.version>
+        <mdh.cxf-xjc.version>3.3.1</mdh.cxf-xjc.version>
         <mdh.jaxb-api.version>2.4.0-b180830.0359</mdh.jaxb-api.version>
         <mdh.jaxb-impl.version>2.4.0-b180830.0438</mdh.jaxb-impl.version>
 
