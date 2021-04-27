@@ -273,8 +273,37 @@
           <groupId>org.apache.cxf</groupId>
           <artifactId>cxf-xjc-plugin</artifactId>
           <version>${mdh.cxf-xjc.version}</version>
+          <dependencies>
+            <!-- Generera JSR-303 Bean Validation Annotations -->
+            <dependency>
+              <groupId>com.github.krasa</groupId>
+              <artifactId>krasa-jaxb-tools</artifactId>
+              <version>1.5</version>
+            </dependency>
+            <!-- Lägg till toString() metoder -->
+            <dependency>
+              <groupId>org.apache.cxf.xjcplugins</groupId>
+              <artifactId>cxf-xjc-ts</artifactId>
+              <version>${mdh.cxf-xjc.version}</version>
+            </dependency>
+          </dependencies>
           <configuration>
             <sourceRoot>${project.build.directory}/generated</sourceRoot>
+            <xsdOptions>
+              <xsdOption>
+                <xsdDir>${project.basedir}/src/main/resources</xsdDir>
+                <bindingFile>${project.basedir}/src/main/resources/bindings.xml</bindingFile>
+                <extension>true</extension>
+                <extensionArgs>
+                  <!-- Ta inte med header som innehåller datum - lättare att diffa -->
+                  <extensionArg>-no-header</extensionArg>
+                  <!-- JSR-303 Bean Validation Annotations -->
+                  <extensionArg>-XJsr303Annotations</extensionArg>
+                  <!-- Insert toString() method -->
+                  <extensionArg>-Xts:style:org.apache.commons.lang3.builder.ToStringStyle.SHORT_PREFIX_STYLE</extensionArg>
+                </extensionArgs>
+              </xsdOption>
+            </xsdOptions>
           </configuration>
         </plugin>
         <plugin>
