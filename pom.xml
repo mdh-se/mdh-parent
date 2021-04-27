@@ -253,6 +253,8 @@
           </dependencies>
           <configuration>
             <defaultOptions>
+              <!-- Lös automatiskt namnkonflikter utan att behöva använda binding customizations -->
+              <autoNameResolution>true</autoNameResolution>
               <bindingFiles>
                 <bindingFile>${project.basedir}/src/main/resources/bindings.xml</bindingFile>
               </bindingFiles>
