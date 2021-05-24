@@ -118,9 +118,9 @@
     <mdh.slf4j.version>1.7.25</mdh.slf4j.version>
     <mdh.sortpom-maven-plugin.version>2.10.0</mdh.sortpom-maven-plugin.version>
     <mdh.spotbugs-maven-plugin.version>3.1.12.2</mdh.spotbugs-maven-plugin.version>
-    <mdh.spring.version>5.2.3.RELEASE</mdh.spring.version>
-    <mdh.spring-boot.version>2.2.4.RELEASE</mdh.spring-boot.version>
-    <mdh.spring-cloud.version>2.2.1.RELEASE</mdh.spring-cloud.version>
+    <mdh.spring.version>5.3.7</mdh.spring.version>
+    <mdh.spring-boot.version>2.5.0</mdh.spring-boot.version>
+    <mdh.spring-cloud.version>3.0.2</mdh.spring-cloud.version>
     <mdh.springfox.version>2.9.2</mdh.springfox.version>
     <mdh.sql-maven-plugin.version>1.5</mdh.sql-maven-plugin.version>
     <mdh.tidy-maven-plugin.version>1.1.0</mdh.tidy-maven-plugin.version>
