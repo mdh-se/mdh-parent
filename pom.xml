@@ -111,7 +111,7 @@
     <mdh.maven-war-plugin.version>3.2.2</mdh.maven-war-plugin.version>
     <mdh.mdh-maven-build-tools.version>31</mdh.mdh-maven-build-tools.version>
     <!-- This version is tied to spring-boot-test -->
-    <mdh.mockito.version>3.1.0</mdh.mockito.version>
+    <mdh.mockito.version>3.9.0</mdh.mockito.version>
     <mdh.persistence-api.version>2.2</mdh.persistence-api.version>
     <mdh.rs-api.version>2.0</mdh.rs-api.version>
     <mdh.servlet-api.version>2.5</mdh.servlet-api.version>
