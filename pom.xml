@@ -148,6 +148,21 @@
         <version>${mdh.mail-api.version}</version>
       </dependency>
       <dependency>
+        <groupId>io.zipkin.brave</groupId>
+        <artifactId>brave</artifactId>
+        <version>${mdh.brave.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.zipkin.brave</groupId>
+        <artifactId>brave-context-log4j12</artifactId>
+        <version>${mdh.brave.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.zipkin.brave</groupId>
+        <artifactId>brave-instrumentation-servlet</artifactId>
+        <version>${mdh.brave.version}</version>
+      </dependency>
+      <dependency>
         <groupId>javax.annotation</groupId>
         <artifactId>javax.annotation-api</artifactId>
         <version>${mdh.annotation-api.version}</version>
@@ -201,21 +216,6 @@
         <groupId>javax.xml.ws</groupId>
         <artifactId>jaxws-api</artifactId>
         <version>${mdh.jaxws-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.zipkin.brave</groupId>
-        <artifactId>brave</artifactId>
-        <version>${mdh.brave.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.zipkin.brave</groupId>
-        <artifactId>brave-context-log4j12</artifactId>
-        <version>${mdh.brave.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.zipkin.brave</groupId>
-        <artifactId>brave-instrumentation-servlet</artifactId>
-        <version>${mdh.brave.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.cxf</groupId>
