@@ -55,7 +55,7 @@
     <mdh.appassembler-maven-plugin.version>1.9</mdh.appassembler-maven-plugin.version>
     <!-- @todo Uppdatera till den version som cxf 3.12.14 använder-->
     <!-- This version is tied to cxf -->
-    <mdh.brave.version>4.3.1</mdh.brave.version>
+    <mdh.brave.version>5.9.4</mdh.brave.version>
     <mdh.build-helper-maven-plugin.version>3.0.0</mdh.build-helper-maven-plugin.version>
     <mdh.checkstyle.version>8.31</mdh.checkstyle.version>
     <mdh.cxf.version>3.2.14</mdh.cxf.version>
@@ -116,7 +116,7 @@
     <!-- This version is tied to spring-boot-test -->
     <mdh.mockito.version>3.9.0</mdh.mockito.version>
     <mdh.persistence-api.version>2.2</mdh.persistence-api.version>
-    <mdh.rs-api.version>2.0</mdh.rs-api.version>
+    <mdh.rs-api.version>2.1.1</mdh.rs-api.version>
     <mdh.servlet-api.version>2.5</mdh.servlet-api.version>
     <mdh.slf4j.version>1.7.25</mdh.slf4j.version>
     <mdh.sortpom-maven-plugin.version>2.10.0</mdh.sortpom-maven-plugin.version>
