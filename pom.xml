@@ -492,8 +492,11 @@
           <artifactId>maven-gpg-plugin</artifactId>
           <version>${mdh.maven-gpg-plugin.version}</version>
           <configuration>
-            <!-- Allow releases using gpg version 1 -->
-            <useAgent>false</useAgent>
+            <!-- Required for GPG 2 -->
+            <gpgArguments>
+              <arg>--pinentry-mode</arg>
+              <arg>loopback</arg>
+            </gpgArguments>
           </configuration>
         </plugin>
         <plugin>
