@@ -4,7 +4,7 @@
 
   <groupId>se.mdh</groupId>
   <artifactId>mdh-parent</artifactId>
-  <version>40-SNAPSHOT</version>
+  <version>41-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>${project.groupId}:${project.artifactId}</name>
