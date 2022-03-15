@@ -594,7 +594,9 @@
           <configuration>
             <escapeString>\</escapeString>
             <nonFilteredFileExtensions>
+              <nonFilteredFileExtension>keystore</nonFilteredFileExtension>
               <nonFilteredFileExtension>pdf</nonFilteredFileExtension>
+              <nonFilteredFileExtension>pfx</nonFilteredFileExtension>
             </nonFilteredFileExtensions>
             <propertiesEncoding>ISO-8859-1</propertiesEncoding>
           </configuration>
