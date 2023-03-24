@@ -1021,10 +1021,14 @@
       </activation>
       <properties>
         <!-- MDH-specific properties -->
+        <!-- This version is tied to cxf -->
+        <mdh.brave.version>5.13.0</mdh.brave.version>
         <mdh.cxf.version>3.3.10</mdh.cxf.version>
         <mdh.cxf-xjc.version>3.3.1</mdh.cxf-xjc.version>
         <mdh.jaxb-api.version>2.4.0-b180830.0359</mdh.jaxb-api.version>
         <mdh.jaxb-impl.version>2.4.0-b180830.0438</mdh.jaxb-impl.version>
+        <!-- This version is tied to cxf -->
+        <mdh.rs-api.version>2.1.5</mdh.rs-api.version>
 
         <!-- Standard Maven properties -->
         <maven.compiler.release>8</maven.compiler.release>
