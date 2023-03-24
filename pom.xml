@@ -1028,7 +1028,9 @@
         <mdh.jaxb-api.version>2.4.0-b180830.0359</mdh.jaxb-api.version>
         <mdh.jaxb-impl.version>2.4.0-b180830.0438</mdh.jaxb-impl.version>
         <!-- This version is tied to cxf -->
-        <mdh.rs-api.version>2.1.5</mdh.rs-api.version>
+        <!-- We can't go beyond version 2.1.1 because that is the last version -->
+        <!-- CXF 3.3.x+ has switched from javax.ws.rs-api to jakarta.ws.rs-api, which has newer versions -->
+        <mdh.rs-api.version>2.1.1</mdh.rs-api.version>
 
         <!-- Standard Maven properties -->
         <maven.compiler.release>8</maven.compiler.release>
