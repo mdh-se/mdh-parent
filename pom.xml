@@ -118,7 +118,8 @@
     <!-- This version is tied to cxf -->
     <mdh.rs-api.version>2.1.1</mdh.rs-api.version>
     <mdh.servlet-api.version>2.5</mdh.servlet-api.version>
-    <mdh.slf4j.version>1.7.25</mdh.slf4j.version>
+    <!-- This version is tied to brave, cxf and spring-boot-->
+    <mdh.slf4j.version>1.7.26</mdh.slf4j.version>
     <mdh.sortpom-maven-plugin.version>2.10.0</mdh.sortpom-maven-plugin.version>
     <mdh.spotbugs-maven-plugin.version>3.1.12.2</mdh.spotbugs-maven-plugin.version>
     <mdh.spring.version>5.3.21</mdh.spring.version>
@@ -247,6 +248,11 @@
         <groupId>org.apache.cxf</groupId>
         <artifactId>cxf-rt-ws-security</artifactId>
         <version>${mdh.cxf.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-jcl</artifactId>
+        <version>${mdh.slf4j.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -1023,7 +1029,7 @@
         <!-- MDH-specific properties -->
         <!-- This version is tied to cxf -->
         <mdh.brave.version>5.13.0</mdh.brave.version>
-        <mdh.cxf.version>3.3.10</mdh.cxf.version>
+        <mdh.cxf.version>3.3.13</mdh.cxf.version>
         <mdh.cxf-xjc.version>3.3.1</mdh.cxf-xjc.version>
         <mdh.jaxb-api.version>2.4.0-b180830.0359</mdh.jaxb-api.version>
         <mdh.jaxb-impl.version>2.4.0-b180830.0438</mdh.jaxb-impl.version>
@@ -1031,6 +1037,8 @@
         <!-- We can't go beyond version 2.1.1 because that is the last version -->
         <!-- CXF 3.3.x+ has switched from javax.ws.rs-api to jakarta.ws.rs-api, which has newer versions -->
         <mdh.rs-api.version>2.1.1</mdh.rs-api.version>
+        <!-- This version is tied to brave, cxf and spring-boot-->
+        <mdh.slf4j.version>1.7.36</mdh.slf4j.version>
 
         <!-- Standard Maven properties -->
         <maven.compiler.release>8</maven.compiler.release>
