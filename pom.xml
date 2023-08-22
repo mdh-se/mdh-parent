@@ -119,6 +119,13 @@
     <mdh.rs-api.version>2.1.1</mdh.rs-api.version>
     <mdh.servlet-api.version>2.5</mdh.servlet-api.version>
     <!-- This version is tied to brave, cxf and spring-boot-->
+    <!-- TODO: Oklart vilken version vi bör använda här
+               1.7.26 används i CXF 3.2.14
+               1.7.30 används i CXF 3.3.10
+               1.7.35/36 används i CXF 3.3.13
+               1.7.36 används i Spring Boot 2.7.0
+               1.7.30 används i Brave 5.9.4 och 5.13.0
+               1.7.36 är senaste för slf4j-jcl-->
     <mdh.slf4j.version>1.7.26</mdh.slf4j.version>
     <mdh.sortpom-maven-plugin.version>2.10.0</mdh.sortpom-maven-plugin.version>
     <mdh.spotbugs-maven-plugin.version>3.1.12.2</mdh.spotbugs-maven-plugin.version>
@@ -167,6 +174,11 @@
       <dependency>
         <groupId>io.zipkin.brave</groupId>
         <artifactId>brave-context-log4j12</artifactId>
+        <version>${mdh.brave.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.zipkin.brave</groupId>
+        <artifactId>brave-context-slf4j</artifactId>
         <version>${mdh.brave.version}</version>
       </dependency>
       <dependency>
