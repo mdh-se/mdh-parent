@@ -57,6 +57,7 @@
     <mdh.brave.version>5.9.4</mdh.brave.version>
     <mdh.build-helper-maven-plugin.version>3.0.0</mdh.build-helper-maven-plugin.version>
     <mdh.checkstyle.version>8.31</mdh.checkstyle.version>
+    <mdh.commons-lang3.version>3.12.0</mdh.commons-lang3.version>
     <mdh.cxf.version>3.2.14</mdh.cxf.version>
     <mdh.cxf-xjc.version>3.2.3</mdh.cxf-xjc.version>
     <mdh.exec-maven-plugin.version>1.4.0</mdh.exec-maven-plugin.version>
@@ -73,6 +74,7 @@
     <mdh.jsp-api.version>2.1</mdh.jsp-api.version>
     <mdh.jsr181-api.version>1.0-MR1</mdh.jsr181-api.version>
     <mdh.jstl-api.version>1.2.1</mdh.jstl-api.version>
+    <mdh.junit.version>4.13.2</mdh.junit.version>
     <mdh.logging.email.level>off</mdh.logging.email.level>
     <mdh.logging.file.encoding>UTF-8</mdh.logging.file.encoding>
     <mdh.logging.file.level>debug</mdh.logging.file.level>
@@ -240,6 +242,16 @@
         <groupId>javax.xml.ws</groupId>
         <artifactId>jaxws-api</artifactId>
         <version>${mdh.jaxws-api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${mdh.junit.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>${mdh.commons-lang3.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.cxf</groupId>
