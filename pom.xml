@@ -58,6 +58,7 @@
     <mdh.build-helper-maven-plugin.version>3.0.0</mdh.build-helper-maven-plugin.version>
     <mdh.checkstyle.version>8.31</mdh.checkstyle.version>
     <mdh.commons-lang3.version>3.12.0</mdh.commons-lang3.version>
+    <mdh.commons-logging.version>1.2</mdh.commons-logging.version>
     <mdh.cxf.version>3.2.14</mdh.cxf.version>
     <mdh.cxf-xjc.version>3.2.3</mdh.cxf-xjc.version>
     <mdh.exec-maven-plugin.version>1.4.0</mdh.exec-maven-plugin.version>
@@ -157,6 +158,11 @@
         <groupId>com.sun.mail</groupId>
         <artifactId>javax.mail</artifactId>
         <version>${mdh.mail-api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging</artifactId>
+        <version>${mdh.commons-logging.version}</version>
       </dependency>
       <dependency>
         <groupId>io.swagger.core.v3</groupId>
