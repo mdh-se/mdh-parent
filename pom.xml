@@ -91,6 +91,7 @@
     <mdh.maven-checkstyle-plugin.version>3.1.2</mdh.maven-checkstyle-plugin.version>
     <mdh.maven-clean-plugin.version>3.1.0</mdh.maven-clean-plugin.version>
     <mdh.maven-compiler-plugin.version>3.8.1</mdh.maven-compiler-plugin.version>
+    <!-- TODO Uppdatera till minst 3.5.0 efter att ha testat den i en dist-uppackning i produkten mdh-??? -->
     <mdh.maven-dependency-plugin.version>3.1.2</mdh.maven-dependency-plugin.version>
     <mdh.maven-deploy-plugin.version>2.8.2</mdh.maven-deploy-plugin.version>
     <mdh.maven-ear-plugin.version>2.10.1</mdh.maven-ear-plugin.version>
@@ -203,6 +204,12 @@
         <artifactId>javax.mail-api</artifactId>
         <version>${mdh.mail-api.version}</version>
       </dependency>
+      <!-- Implementation javax.mail -->
+      <dependency>
+        <groupId>javax.mail</groupId>
+        <artifactId>mail</artifactId>
+        <version>${mdh.mail-api.version}</version>
+      </dependency>
       <dependency>
         <groupId>javax.persistence</groupId>
         <artifactId>javax.persistence-api</artifactId>
@@ -294,6 +301,7 @@
         <version>${mdh.log4j2.version}</version>
         <scope>runtime</scope>
       </dependency>
+      <!-- TODO Den kan vi ta bort när vi helt gått över till Log4j 2 -->
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-jcl</artifactId>
