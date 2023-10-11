@@ -114,7 +114,7 @@
     <mdh.maven-surefire-plugin.version>2.22.2</mdh.maven-surefire-plugin.version>
     <mdh.maven-toolchains-plugin.version>1.1</mdh.maven-toolchains-plugin.version>
     <mdh.maven-wagon.version>3.1.0</mdh.maven-wagon.version>
-    <mdh.maven-war-plugin.version>3.2.2</mdh.maven-war-plugin.version>
+    <mdh.maven-war-plugin.version>3.4.0</mdh.maven-war-plugin.version>
     <mdh.mdh-maven-build-tools.version>33</mdh.mdh-maven-build-tools.version>
     <!-- This version is tied to spring-boot-test -->
     <mdh.mockito.version>4.6.1</mdh.mockito.version>
@@ -729,7 +729,10 @@
             <archiveClasses>true</archiveClasses>
             <escapeString>\</escapeString>
             <filteringDeploymentDescriptors>true</filteringDeploymentDescriptors>
+            <!-- Förhindra att filer som kopierats till WEB-INF/lib av maven-dependency-plugin raderas -->
+            <outdatedCheckPath>NONE</outdatedCheckPath>
             <outputFileNameMapping>@{artifactId}@@{dashClassifier?}@.@{extension}@</outputFileNameMapping>
+            <propertiesEncoding>ISO-8859-1</propertiesEncoding>
           </configuration>
         </plugin>
         <plugin>
