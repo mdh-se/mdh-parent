@@ -311,12 +311,6 @@
         <artifactId>mockito-core</artifactId>
         <version>${mdh.mockito.version}</version>
       </dependency>
-      <!-- TODO Den kan vi ta bort när vi helt gått över till Log4j 2 -->
-      <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-jcl</artifactId>
-        <version>${mdh.slf4j.version}</version>
-      </dependency>
     </dependencies>
   </dependencyManagement>
 
