@@ -840,9 +840,9 @@
                 </bannedDependencies>
                 <bannedDependencies>
                   <excludes>
-                    <exclude>org.slf4j:slf4j-jcl</exclude>
+                    <exclude>org.slf4j:jcl-over-slf4j</exclude>
                   </excludes>
-                  <message>Please use org.apache.logging.log4j:log4j-slf4j-impl instead.</message>
+                  <message>Please use commons-logging:commons-logging and org.apache.logging.log4j:log4j-jcl instead.</message>
                 </bannedDependencies>
               </rules>
               <fail>true</fail>
