@@ -4,7 +4,7 @@
 
   <groupId>se.mdh</groupId>
   <artifactId>mdh-parent</artifactId>
-  <version>55-SNAPSHOT</version>
+  <version>55</version>
   <packaging>pom</packaging>
 
   <name>${project.groupId}:${project.artifactId}</name>
@@ -34,7 +34,7 @@
   <scm>
     <connection>scm:git:https://github.com/mdh-se/${project.artifactId}.git</connection>
     <developerConnection>scm:git:https://github.com/mdh-se/${project.artifactId}.git</developerConnection>
-    <tag>mdh-parent-43</tag>
+    <tag>mdh-parent-55</tag>
     <url>https://github.com/mdh-se/${project.artifactId}</url>
   </scm>
   <distributionManagement>
