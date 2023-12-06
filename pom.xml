@@ -76,7 +76,7 @@
     <mdh.jsr181-api.version>1.0-MR1</mdh.jsr181-api.version>
     <mdh.jstl-api.version>1.2.1</mdh.jstl-api.version>
     <mdh.junit.version>4.13.2</mdh.junit.version>
-    <mdh.log4j2.version>2.20.0</mdh.log4j2.version>
+    <mdh.log4j2.version>2.22.0</mdh.log4j2.version>
     <mdh.logging.email.level>off</mdh.logging.email.level>
     <mdh.logging.file.encoding>UTF-8</mdh.logging.file.encoding>
     <mdh.logging.file.level>debug</mdh.logging.file.level>
