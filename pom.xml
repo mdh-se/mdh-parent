@@ -66,7 +66,7 @@
     <!-- This version is tied to spring-boot-test -->
     <mdh.hamcrest.version>2.1</mdh.hamcrest.version>
     <!-- This version is tied to spring-boot -->
-    <mdh.jackson.version>2.10.2</mdh.jackson.version>
+    <mdh.jackson.version>2.13.5</mdh.jackson.version>
     <mdh.jacoco-maven-plugin.version>0.8.3</mdh.jacoco-maven-plugin.version>
     <mdh.java.version>1.8</mdh.java.version>
     <mdh.jaxb-api.version>2.2.8</mdh.jaxb-api.version>
@@ -148,6 +148,31 @@
 
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-annotations</artifactId>
+        <version>${mdh.jackson.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-core</artifactId>
+        <version>${mdh.jackson.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>${mdh.jackson.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.dataformat</groupId>
+        <artifactId>jackson-dataformat-xml</artifactId>
+        <version>${mdh.jackson.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.jaxrs</groupId>
+        <artifactId>jackson-jaxrs-json-provider</artifactId>
+        <version>${mdh.jackson.version}</version>
+      </dependency>
       <!-- Implementation javax.mail -->
       <dependency>
         <groupId>com.sun.mail</groupId>
