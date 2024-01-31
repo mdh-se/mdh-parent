@@ -1156,14 +1156,18 @@
         <mdh.brave.version>5.13.0</mdh.brave.version>
         <mdh.cxf.version>3.3.13</mdh.cxf.version>
         <mdh.cxf-xjc.version>3.3.1</mdh.cxf-xjc.version>
-        <mdh.jaxb-api.version>2.4.0-b180830.0359</mdh.jaxb-api.version>
-        <mdh.jaxb-impl.version>2.4.0-b180830.0438</mdh.jaxb-impl.version>
+        <!-- JAX-WS 2.3.1 uses JAXB 2.3.1 so we match that version here -->
+        <!-- These 2 versions are tied to jaxws -->
+        <!-- TODO jakarta.xml.bind:jakarta.xml.bind-api is available from version 2.3.2 when it is time to migrate -->
+        <mdh.jaxb-api.version>2.3.1</mdh.jaxb-api.version>
+        <mdh.jaxb-impl.version>2.3.1</mdh.jaxb-impl.version>
+        <!-- The last version of JAX-WS that uses javax.* dependencies is 2.3.1, all later versions use jakarta.* dependencies instead -->
+        <mdh.jaxws-api.version>2.3.1</mdh.jaxws-api.version>
+        <mdh.jaxws-impl.version>2.3.1</mdh.jaxws-impl.version>
         <!-- This version is tied to cxf -->
         <!-- We can't go beyond version 2.1.1 because that is the last version -->
         <!-- CXF 3.3.x+ has switched from javax.ws.rs-api to jakarta.ws.rs-api, which has newer versions -->
         <mdh.rs-api.version>2.1.1</mdh.rs-api.version>
-        <!-- This version is tied to brave, cxf and spring-boot-->
-        <mdh.slf4j.version>1.7.36</mdh.slf4j.version>
 
         <!-- Standard Maven properties -->
         <maven.compiler.release>8</maven.compiler.release>
@@ -1171,7 +1175,27 @@
 
       <dependencyManagement>
         <dependencies>
+          <!-- Implementation javax.xml.soap:saaj-api -->
+          <!-- Minimum version 1.5.1 to avoid warning/error about META-INF/services/javax.xml.soap.[SAAJ]MetaFactory -->
+          <dependency>
+            <groupId>com.sun.xml.messaging.saaj</groupId>
+            <artifactId>saaj-impl</artifactId>
+            <version>1.5.1</version>
+          </dependency>
+          <!-- Implementation javax.xml.ws -->
+          <dependency>
+            <groupId>com.sun.xml.ws</groupId>
+            <artifactId>jaxws-rt</artifactId>
+            <version>${mdh.jaxws-impl.version}</version>
+          </dependency>
+          <!-- Version 2.7.5 that is pulled in by com.sun.xml.ws:jaxws-rt includes version 2.4.0-b180608.0325 of org.glassfish.jaxb:txw2 which does not exist at Maven central -->
+          <dependency>
+            <groupId>com.sun.xml.ws</groupId>
+            <artifactId>policy</artifactId>
+            <version>2.7.6</version>
+          </dependency>
           <!-- Implementation javax.xml.bind -->
+          <!-- Do not replace this with com.sun.xml.bind:jaxb-impl because com.sun.xml.ws:jaxws-rt uses org.glassfish.jaxb:jaxb-runtime as JAXB implementation -->
           <dependency>
             <groupId>org.glassfish.jaxb</groupId>
             <artifactId>jaxb-runtime</artifactId>
