@@ -225,6 +225,11 @@
         <version>${mdh.jms-api.version}</version>
       </dependency>
       <dependency>
+        <groupId>javax.jws</groupId>
+        <artifactId>jsr181-api</artifactId>
+        <version>${mdh.jsr181-api.version}</version>
+      </dependency>
+      <dependency>
         <groupId>javax.mail</groupId>
         <artifactId>javax.mail-api</artifactId>
         <version>${mdh.mail-api.version}</version>
