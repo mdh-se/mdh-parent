@@ -92,7 +92,9 @@
     <mdh.jakarta.xml.ws-api.version>2.3.3</mdh.jakarta.xml.ws-api.version>
     <mdh.java.version>1.8</mdh.java.version>
     <mdh.jaxb-api.version>2.2.8</mdh.jaxb-api.version>
+    <mdh.jaxb-impl.version>2.3.9</mdh.jaxb-impl.version>
     <mdh.jaxws-api.version>2.2.9</mdh.jaxws-api.version>
+    <mdh.jaxws-impl.version>2.3.7</mdh.jaxws-impl.version>
     <mdh.jms-api.version>2.0.1</mdh.jms-api.version>
     <mdh.jsp-api.version>2.1</mdh.jsp-api.version>
     <mdh.jstl-api.version>1.2.1</mdh.jstl-api.version>
@@ -200,6 +202,18 @@
         <groupId>com.sun.mail</groupId>
         <artifactId>javax.mail</artifactId>
         <version>${mdh.mail.version}</version>
+      </dependency>
+      <!-- Implementation javax.xml.bind -->
+      <dependency>
+        <groupId>com.sun.xml.bind</groupId>
+        <artifactId>jaxb-impl</artifactId>
+        <version>${mdh.jaxb-impl.version}</version>
+      </dependency>
+      <!-- Implementation javax.xml.ws -->
+      <dependency>
+        <groupId>com.sun.xml.ws</groupId>
+        <artifactId>jaxws-rt</artifactId>
+        <version>${mdh.jaxws-impl.version}</version>
       </dependency>
       <dependency>
         <groupId>commons-logging</groupId>
@@ -1238,29 +1252,11 @@
         <mdh.brave.version>5.13.0</mdh.brave.version>
         <mdh.cxf.version>3.3.13</mdh.cxf.version>
         <mdh.cxf-xjc.version>3.3.1</mdh.cxf-xjc.version>
-        <mdh.jaxb-impl.version>2.3.9</mdh.jaxb-impl.version>
-        <mdh.jaxws-impl.version>2.3.7</mdh.jaxws-impl.version>
 
         <!-- Standard Maven properties -->
         <maven.compiler.release>8</maven.compiler.release>
       </properties>
 
-      <dependencyManagement>
-        <dependencies>
-          <!-- Implementation javax.xml.bind -->
-          <dependency>
-            <groupId>com.sun.xml.bind</groupId>
-            <artifactId>jaxb-impl</artifactId>
-            <version>${mdh.jaxb-impl.version}</version>
-          </dependency>
-          <!-- Implementation javax.xml.ws -->
-          <dependency>
-            <groupId>com.sun.xml.ws</groupId>
-            <artifactId>jaxws-rt</artifactId>
-            <version>${mdh.jaxws-impl.version}</version>
-          </dependency>
-        </dependencies>
-      </dependencyManagement>
       <!-- TODO Add configuration for maven-enforcer-plugin / enforceBytecodeVersion -->
     </profile>
 
