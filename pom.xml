@@ -1014,6 +1014,11 @@
                   <excludes>
                     <exclude>mysql:mysql-connector-java</exclude>
                   </excludes>
+                  <ignoreClasses>
+                    <!-- These 2 classes from com.sun.xml.bind:jaxb-impl contains Java 11 bytecode (55), but are in the directory for Java 9 bytecode (53) -->
+                    <ignoreClass>META-INF/versions/9/com/sun/istack/logging/StackHelper</ignoreClass>
+                    <ignoreClass>META-INF/versions/9/com/sun/xml/bind/StackHelper</ignoreClass>
+                  </ignoreClasses>
                 </enforceBytecodeVersion>
               </rules>
               <fail>true</fail>
