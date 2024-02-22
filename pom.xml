@@ -101,6 +101,7 @@
     <mdh.junit.version>4.13.2</mdh.junit.version>
     <mdh.jws-api.version>1.0-MR1</mdh.jws-api.version>
     <mdh.log4j2.version>2.22.0</mdh.log4j2.version>
+    <mdh.logging.email.buffer>10</mdh.logging.email.buffer>
     <mdh.logging.email.level>off</mdh.logging.email.level>
     <mdh.logging.file.encoding>UTF-8</mdh.logging.file.encoding>
     <mdh.logging.file.level>debug</mdh.logging.file.level>
