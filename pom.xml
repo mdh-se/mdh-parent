@@ -455,6 +455,11 @@
         <artifactId>mockito-core</artifactId>
         <version>${mdh.mockito.version}</version>
       </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${mdh.slf4j.version}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
