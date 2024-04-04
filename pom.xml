@@ -219,24 +219,12 @@
         <groupId>com.sun.xml.bind</groupId>
         <artifactId>jaxb-impl</artifactId>
         <version>${mdh.jaxb-impl.version}</version>
-        <exclusions>
-          <exclusion>
-            <artifactId>jakarta.activation</artifactId>
-            <groupId>com.sun.activation</groupId>
-          </exclusion>
-        </exclusions>
       </dependency>
       <!-- Implementation javax.xml.ws -->
       <dependency>
         <groupId>com.sun.xml.ws</groupId>
         <artifactId>jaxws-rt</artifactId>
         <version>${mdh.jaxws-impl.version}</version>
-        <exclusions>
-          <exclusion>
-            <artifactId>jakarta.activation</artifactId>
-            <groupId>com.sun.activation</groupId>
-          </exclusion>
-        </exclusions>
       </dependency>
       <dependency>
         <groupId>commons-logging</groupId>
