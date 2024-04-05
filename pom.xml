@@ -1004,12 +1004,6 @@
                 </bannedDependencies>
                 <bannedDependencies>
                   <excludes>
-                    <exclude>com.sun.xml.bind:jaxb-impl</exclude>
-                  </excludes>
-                  <message>Please use org.glassfish.jaxb:jaxb-runtime instead.</message>
-                </bannedDependencies>
-                <bannedDependencies>
-                  <excludes>
                     <exclude>org.slf4j:jcl-over-slf4j</exclude>
                   </excludes>
                   <message>Please use commons-logging:commons-logging and org.apache.logging.log4j:log4j-jcl instead.</message>
