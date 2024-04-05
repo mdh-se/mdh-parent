@@ -214,12 +214,6 @@
         <artifactId>javax.mail</artifactId>
         <version>${mdh.mail.version}</version>
       </dependency>
-      <!-- Implementation javax.xml.bind -->
-      <dependency>
-        <groupId>com.sun.xml.bind</groupId>
-        <artifactId>jaxb-impl</artifactId>
-        <version>${mdh.jaxb-impl.version}</version>
-      </dependency>
       <!-- Implementation javax.xml.ws -->
       <dependency>
         <groupId>com.sun.xml.ws</groupId>
@@ -452,6 +446,12 @@
         <artifactId>log4j-slf4j-impl</artifactId>
         <version>${mdh.log4j2.version}</version>
         <scope>runtime</scope>
+      </dependency>
+      <!-- Implementation javax.xml.bind -->
+      <dependency>
+        <groupId>org.glassfish.jaxb</groupId>
+        <artifactId>jaxb-runtime</artifactId>
+        <version>${mdh.jaxb-impl.version}</version>
       </dependency>
       <dependency>
         <groupId>org.mockito</groupId>
@@ -1001,6 +1001,12 @@
                     <exclude>com.sun.mail:javax.mail</exclude>
                   </excludes>
                   <message>Please use javax.mail:mail instead.</message>
+                </bannedDependencies>
+                <bannedDependencies>
+                  <excludes>
+                    <exclude>com.sun.xml.bind:jaxb-impl</exclude>
+                  </excludes>
+                  <message>Please use org.glassfish.jaxb:jaxb-runtime instead.</message>
                 </bannedDependencies>
                 <bannedDependencies>
                   <excludes>
