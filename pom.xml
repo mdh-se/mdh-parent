@@ -922,6 +922,7 @@
             <outputFileNameMapping>@{artifactId}@@{dashClassifier?}@.@{extension}@</outputFileNameMapping>
             <repositoryLayout>flat</repositoryLayout>
             <repositoryName>lib</repositoryName>
+            <useWildcardClassPath>true</useWildcardClassPath>
           </configuration>
         </plugin>
         <plugin>
