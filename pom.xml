@@ -242,11 +242,6 @@
       </dependency>
       <dependency>
         <groupId>io.zipkin.brave</groupId>
-        <artifactId>brave-context-log4j12</artifactId>
-        <version>${mdh.brave.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.zipkin.brave</groupId>
         <artifactId>brave-context-slf4j</artifactId>
         <version>${mdh.brave.version}</version>
       </dependency>
