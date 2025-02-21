@@ -52,7 +52,6 @@
     <!-- MDH-specific properties -->
     <!-- This version is tied to javax.mail -->
     <mdh.activation.version>1.1</mdh.activation.version>
-    <mdh.animal-sniffer-maven-plugin.version>1.17</mdh.animal-sniffer-maven-plugin.version>
     <mdh.annotation-api.version>1.3.2</mdh.annotation-api.version>
     <mdh.appassembler-maven-plugin.version>1.9</mdh.appassembler-maven-plugin.version>
     <!-- This version is tied to cxf -->
@@ -95,7 +94,7 @@
     <mdh.jakarta.xml.bind-api.version>2.3.3</mdh.jakarta.xml.bind-api.version>
     <!-- This version is tied to spring-boot -->
     <mdh.jakarta.xml.ws-api.version>2.3.3</mdh.jakarta.xml.ws-api.version>
-    <mdh.java.version>1.8</mdh.java.version>
+    <mdh.java.version>8</mdh.java.version>
     <mdh.jaxb-api.version>2.2.8</mdh.jaxb-api.version>
     <mdh.jaxb-impl.version>2.3.9</mdh.jaxb-impl.version>
     <mdh.jaxws-api.version>2.2.9</mdh.jaxws-api.version>
@@ -121,7 +120,7 @@
     <mdh.maven-changes-plugin.version>2.12.1</mdh.maven-changes-plugin.version>
     <mdh.maven-checkstyle-plugin.version>3.1.2</mdh.maven-checkstyle-plugin.version>
     <mdh.maven-clean-plugin.version>3.1.0</mdh.maven-clean-plugin.version>
-    <mdh.maven-compiler-plugin.version>3.8.1</mdh.maven-compiler-plugin.version>
+    <mdh.maven-compiler-plugin.version>3.14.0</mdh.maven-compiler-plugin.version>
     <mdh.maven-dependency-plugin.version>3.6.1</mdh.maven-dependency-plugin.version>
     <mdh.maven-deploy-plugin.version>2.8.2</mdh.maven-deploy-plugin.version>
     <mdh.maven-ear-plugin.version>2.10.1</mdh.maven-ear-plugin.version>
@@ -134,7 +133,7 @@
     <mdh.maven-jxr-plugin.version>3.1.1</mdh.maven-jxr-plugin.version>
     <mdh.maven-pdf-plugin.version>1.4</mdh.maven-pdf-plugin.version>
     <mdh.maven-plugin-plugin.version>3.5.2</mdh.maven-plugin-plugin.version>
-    <mdh.maven-pmd-plugin.version>3.14.0</mdh.maven-pmd-plugin.version>
+    <mdh.maven-pmd-plugin.version>3.26.0</mdh.maven-pmd-plugin.version>
     <mdh.maven-project-info-reports-plugin.version>3.0.0</mdh.maven-project-info-reports-plugin.version>
     <mdh.maven-release-plugin.version>2.5.3</mdh.maven-release-plugin.version>
     <msh.maven-remote-resources-plugin.version>1.5</msh.maven-remote-resources-plugin.version>
@@ -170,6 +169,7 @@
     <mdh.versions-maven-plugin.version>2.5</mdh.versions-maven-plugin.version>
 
     <!-- Standard Maven properties -->
+    <maven.compiler.release>${mdh.java.version}</maven.compiler.release>
     <maven.compiler.source>${mdh.java.version}</maven.compiler.source>
     <maven.compiler.target>${mdh.java.version}</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -789,7 +789,7 @@
             <rulesets>
               <ruleset>rulesets/maven.xml</ruleset>
             </rulesets>
-            <targetJdk>${maven.compiler.source}</targetJdk>
+            <targetJdk>${maven.compiler.release}</targetJdk>
           </configuration>
         </plugin>
         <plugin>
@@ -907,11 +907,6 @@
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
-          <artifactId>animal-sniffer-maven-plugin</artifactId>
-          <version>${mdh.animal-sniffer-maven-plugin.version}</version>
-        </plugin>
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
           <artifactId>appassembler-maven-plugin</artifactId>
           <version>${mdh.appassembler-maven-plugin.version}</version>
           <configuration>
@@ -1022,7 +1017,7 @@
             <configuration>
               <rules>
                 <requireJavaVersion>
-                  <version>${maven.compiler.source}</version>
+                  <version>${maven.compiler.release}</version>
                 </requireJavaVersion>
                 <requireMavenVersion>
                   <version>${mdh.maven.version}</version>
@@ -1038,7 +1033,7 @@
             <configuration>
               <rules>
                 <enforceBytecodeVersion>
-                  <maxJdkVersion>${maven.compiler.target}</maxJdkVersion>
+                  <maxJdkVersion>${maven.compiler.release}</maxJdkVersion>
                   <excludes>
                     <exclude>mysql:mysql-connector-java</exclude>
                   </excludes>
@@ -1060,47 +1055,6 @@
             <version>${mdh.extra-enforcer-rules.version}</version>
           </dependency>
         </dependencies>
-      </plugin>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>animal-sniffer-maven-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>check-java-compatibility</id>
-            <phase>process-classes</phase>
-            <goals>
-              <goal>check</goal>
-            </goals>
-            <configuration>
-              <signature>
-                <groupId>org.codehaus.mojo.signature</groupId>
-                <artifactId>java${javaSignature.majorVersion}${javaSignature.minorVersion}</artifactId>
-                <version>1.0</version>
-              </signature>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>build-helper-maven-plugin</artifactId>
-        <executions>
-          <!--
-            Make the version parts of the maven.compiler.target property
-            available as separate properties, so that they can be used to define
-            the java signature artifactId used by animal-sniffer-maven-plugin
-          -->
-          <execution>
-            <id>parse-version</id>
-            <goals>
-              <goal>parse-version</goal>
-            </goals>
-            <configuration>
-              <propertyPrefix>javaSignature</propertyPrefix>
-              <versionString>${maven.compiler.target}</versionString>
-            </configuration>
-          </execution>
-        </executions>
       </plugin>
     </plugins>
   </build>
@@ -1271,20 +1225,6 @@
           </plugin>
         </plugins>
       </build>
-    </profile>
-
-    <profile>
-      <id>java-11</id>
-      <!-- For plugins that require at least Java 11 to run, or are required to build with Java 11 -->
-      <activation>
-        <jdk>[1.11,)</jdk>
-      </activation>
-      <properties>
-        <!-- Standard Maven properties -->
-        <maven.compiler.release>8</maven.compiler.release>
-      </properties>
-
-      <!-- TODO Add configuration for maven-enforcer-plugin / enforceBytecodeVersion -->
     </profile>
 
     <profile>
