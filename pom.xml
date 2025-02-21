@@ -526,7 +526,7 @@
               <!-- Lös automatiskt namnkonflikter utan att behöva använda binding customizations -->
               <autoNameResolution>true</autoNameResolution>
               <bindingFiles>
-                <bindingFile>${project.basedir}/src/main/resources/bindings.xml</bindingFile>
+                <bindingFile>${project.basedir}/src/main/xjb/bindings.xml</bindingFile>
               </bindingFiles>
               <extraargs>
                 <!-- Generera JSR-303 Bean Validation Annotations -->
@@ -562,7 +562,7 @@
             <xsdOptions>
               <xsdOption>
                 <xsdDir>${project.basedir}/src/main/resources</xsdDir>
-                <bindingFile>${project.basedir}/src/main/resources/bindings.xml</bindingFile>
+                <bindingFile>${project.basedir}/src/main/xjb/bindings.xml</bindingFile>
                 <extension>true</extension>
                 <extensionArgs>
                   <!-- Ta inte med header som innehåller datum - lättare att diffa -->
