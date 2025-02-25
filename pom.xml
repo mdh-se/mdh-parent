@@ -62,8 +62,8 @@
     <mdh.commons-lang3.version>3.12.0</mdh.commons-lang3.version>
     <mdh.commons-logging.version>1.2</mdh.commons-logging.version>
     <mdh.commons-text.version>1.10.0</mdh.commons-text.version>
-    <mdh.cxf.version>3.5.8</mdh.cxf.version>
-    <mdh.cxf-xjc.version>3.3.3</mdh.cxf-xjc.version>
+    <mdh.cxf.version>3.6.5</mdh.cxf.version>
+    <mdh.cxf-xjc.version>3.3.4</mdh.cxf-xjc.version>
     <mdh.exec-maven-plugin.version>1.4.0</mdh.exec-maven-plugin.version>
     <mdh.extra-enforcer-rules.version>1.7.0</mdh.extra-enforcer-rules.version>
     <!-- This version is tied to spring-boot-test -->
@@ -94,7 +94,7 @@
     <mdh.jakarta.xml.bind-api.version>2.3.3</mdh.jakarta.xml.bind-api.version>
     <!-- This version is tied to spring-boot -->
     <mdh.jakarta.xml.ws-api.version>2.3.3</mdh.jakarta.xml.ws-api.version>
-    <mdh.java.version>8</mdh.java.version>
+    <mdh.java.version>11</mdh.java.version>
     <mdh.jaxb-api.version>2.2.8</mdh.jaxb-api.version>
     <mdh.jaxb-impl.version>2.3.9</mdh.jaxb-impl.version>
     <mdh.jaxws-api.version>2.2.9</mdh.jaxws-api.version>
@@ -133,6 +133,7 @@
     <mdh.maven-jxr-plugin.version>3.1.1</mdh.maven-jxr-plugin.version>
     <mdh.maven-pdf-plugin.version>1.4</mdh.maven-pdf-plugin.version>
     <mdh.maven-plugin-plugin.version>3.5.2</mdh.maven-plugin-plugin.version>
+    <!-- Do NOT update this to a newer version until maven-site-plugin is also updated to 3.20.0 -->
     <mdh.maven-pmd-plugin.version>3.24.0</mdh.maven-pmd-plugin.version>
     <mdh.maven-project-info-reports-plugin.version>3.0.0</mdh.maven-project-info-reports-plugin.version>
     <mdh.maven-release-plugin.version>2.5.3</mdh.maven-release-plugin.version>
